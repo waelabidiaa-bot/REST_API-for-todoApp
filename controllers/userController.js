@@ -20,7 +20,7 @@ const createUser = async (req, res) => {
     const user = await User.create({ username, email, password: hashedPassword });
 
     const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET || 'defaultsecret', {
-      expiresIn: '1d',
+      expiresIn: '1h',
     });
 
     res.status(201).json({

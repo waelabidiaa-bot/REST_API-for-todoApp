@@ -33,3 +33,16 @@ A secure RESTful API for managing todo lists, built with **Node.js**, **Express*
    git clone https://github.com/waelabidiaa-bot/REST_API-for-todoApp
    cd todo-api"# REST_API-for-todoApp" 
 "# REST_API-for-todoApp" 
+
+## API Endpoints
+
+### User Routes
+- `POST /users/register` - Register new user
+- `POST /users/login` - Login user
+
+### Todo Routes (Protected)
+- `POST /todos` - Create todo
+- `GET /todos` - Get all user's todos
+- `GET /todos/:id` - Get single todo
+- `PUT /todos/:id` - Update todo
+- `DELETE /todos/:id` - Delete todo
